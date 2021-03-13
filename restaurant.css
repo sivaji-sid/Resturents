@@ -1,0 +1,219 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+body{
+	height: 100vh;
+}
+.order{
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	background-image: url('C:/Users/user/Pictures/res/res1.jpg');
+}
+.star img{
+	height: 100px;
+	width: 100px;
+ 	padding-left: 30px; 
+ 	margin-top: 30px; 
+ }
+ .orderbutton{
+ 	width: 100%;
+ 	height: 50px;
+ 	 font-size: 30px;
+ 	 text-align:center;
+ 	 margin-top: 30px;
+ }
+ .orderbutton a{
+ 	text-decoration: none;
+ 	margin-top: 50px;
+ }
+ .orderbutton a .fa{
+ 	color: red
+ }
+ .demo1{
+	width: 80%;
+	height: 20px;
+	position: fixed;
+	top: 0;
+	right: -250px;
+ 	z-index: 2;
+}
+.demo1 ul{
+	display: inline-block;
+	list-style-type: none;
+	margin:60px 30px;
+}
+.demo1 ul li{
+	display: inline-block;
+	font-size: 20px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+.demo1 ul li a{
+	text-decoration:none;
+	padding: 20px;
+}
+.demo1 ul li a:hover{
+	color: green;
+}
+.demo1 ul li a:active{
+	color: pink;
+}
+@media screen and (max-width: 770px){
+	.star img{
+		width: 50px;
+		height: 50px;
+	}
+	.demo1 ul li{
+		font-size: 10px;
+		margin-bottom: 20px
+	}
+	.demo1 ul li a{
+		padding: 5px;
+	}
+	.demo1{
+	width: 130%;
+	height: 20px;
+	}
+	.orderbutton{
+		text-align:center;
+		margin-top: 30px;
+	}
+	.orderbutton a{
+ 	}
+}
+
+
+/*Menu*/
+.service1{
+	text-align:center;
+	padding-bottom: 50px;
+	margin-top: 50px
+}
+.service1 p{
+	margin: auto;
+	font-size: 20px;
+	color: #009688;
+	font-weight: bold;
+	position: relative;
+ 	display: inline-block;
+}
+.service1 p::after{
+	content: '';
+	width: 50px;
+	height: 35px;
+	background: linear-gradient(#AD2A1A,#fff);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: rotate(10deg);
+ 	border-bottom-right-radius: 35px;
+}
+.service1 h1{
+	font-size: 30px
+}
+.service2{
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-left: 40px;
+}
+.serviceimg{
+	flex-basis: 30%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.serviceimg a img{
+	width: 100%;
+	border-radius: 7px
+}
+.serviceimg p{
+	font-size: 20px;
+	color:#663399;
+} 
+@media screen and (max-width: 770px){
+		 .serviceimg {
+		 	flex-basis: 100%;
+		 }
+}
+/*Services*/
+.area1{
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-left: 30px;
+}
+.dining{
+	flex-basis: 30%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding:10px; 
+}
+.dining a img{
+	width: 100%;
+	border-radius:7px;
+}
+.dining p{
+	font-size: 20px;
+	color:#663399; 
+}
+@media screen and (max-width: 770px){
+		 .dining {
+		 	flex-basis: 100%;
+		 }
+}
+/*About Us*/
+#about{
+	padding: 100px 0 20px;
+	background: #efefef;
+	position: relative;
+}
+.aboutus{
+	width: 80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.footer-right{
+	text-align:right;
+}.footer-row h1{
+	margin:10px 0;
+}
+.footer-row p{
+	line-height: 35px;
+}
+.aboutus .fa{
+	color: #009866;
+	padding: 5px;
+}
+.social-links{
+	text-align: center;
+}
+.social-links a .fa{
+	width: 40px;
+	height: 40px;
+	border:2px solid #009688;
+	border-radius: 10px;
+	line-height: 40px;
+ 	font-size: 20px;
+	cursor: pointer;
+	color: #009688;
+}
+@media screen and (max-width: 770px){
+		.footer-left,.footer-right{
+		flex-basis: 100%;
+ 	}		 
+}
